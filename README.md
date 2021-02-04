@@ -28,7 +28,7 @@ scl=machine.Pin(1)
 i2c=machine.I2C(0,sda=sda, scl=scl, freq=400000)
 print(i2c.scan())
 
-- Once you get an address, this will be in decimal and not hex. You can convert the decimal to hex or simply put a decimal address in the setup.
+- Once you get an address through the console (REPL), this will be in decimal and not hex. You can convert the decimal to hex or simply put a decimal address in the setup.
 in my case, the decimal addr. was 39 which converts to 0x27 in hex.
 - Ensure that your SCL and SDA pins are selected properly in accordance with the Pico's pin table. These connect to the low voltage side of the translator with a 3.3V Reference from the board. The high voltage side gets a 5V reference from the VBUS pin of the Pico.
 - Finally, assure the I2C_NUM_ROWS and I2C_NUM_COLS are set properly!
