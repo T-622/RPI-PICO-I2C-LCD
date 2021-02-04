@@ -13,6 +13,7 @@ Usage:
 - In Thonny, go to top menu File => Save Copy => Raspberry Pi Pico and save each .py file to the board.
 - Switch to the main.py and click run. This should be able to initalize the LCD display if settings are right.
 - If you get errors, see below for a known list of errors and their fixes
+- Wiring Diagram LCD_bb.jpg! Please look here for a fritzing diagram!
 
 Requirements:
 - 3.3 - 5V level translator. This is crucial to encure the lcd recieves the commands properly. I recommend this: https://www.adafruit.com/product/757 (Must be Bi-Directional)
