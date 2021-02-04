@@ -38,3 +38,5 @@ Printing is simple :lcd.putstr("") This requires a string input! if you want to 
 
 Errors:
 OSERROR : 5 (This is quite a common error, 5 means I/O error. Check Your connections. This means codes can't be sent or recieved ensure SCL and SDA are properly connected through the level translator!
+
+Feel to leave comments or questions and I will try to answer them as quick as possible!
