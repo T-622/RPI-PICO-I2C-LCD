@@ -34,9 +34,11 @@ in my case, the decimal addr. was 39 which converts to 0x27 in hex.
 - Finally, assure the I2C_NUM_ROWS and I2C_NUM_COLS are set properly!
 
 Usage: 
+
 Printing is simple :lcd.putstr("") This requires a string input! if you want to feed a changing value such as a temperature, it must be: lcd.putstr(str(Variable))
 
 Errors:
+
 OSERROR : 5 (This is quite a common error, 5 means I/O error. Check Your connections. This means codes can't be sent or recieved ensure SCL and SDA are properly connected through the level translator!
 
 Feel to leave comments or questions and I will try to answer them as quick as possible!
