@@ -10,7 +10,7 @@ Usage:
 - Open Thonny IDE with the 3 files
 - Make pin edits or setup changes (See below for options) 
 - DO NOT EDIT FILE NAMES!
-- In Thonny, go to top menu File => Save Copy => Raspberry Pi Pico and save each .py file to the board.
+- In Thonny, go to top menu File => Save Copy => Raspberry Pi Pico and save each file to the board with the same name as downloaded and with a .PY extension when saving it to the board. 
 - Switch to the pico_i2c_lcd_test.py (this is the main file) and click run. This should be able to initalize the LCD display if settings are right.
 - If you get errors, see below for a known list of errors and their fixes
 - Wiring Diagram LCD_bb.jpg! Please look here for a fritzing diagram!
