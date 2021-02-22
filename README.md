@@ -43,3 +43,5 @@ Errors:
 OSERROR : 5 (This is quite a common error, 5 means I/O error. Check Your connections. This means codes can't be sent or recieved ensure SCL and SDA are properly connected through the level translator!
 
 Feel to leave comments or questions / issues and I will try to answer / resolve them as quick as possible!
+
+For people wondering how to use this code, Tinkernut on Youtube created a very nice guide + some more features! https://www.youtube.com/watch?v=B8Kr_3xHjqE&t
