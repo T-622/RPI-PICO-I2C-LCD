@@ -21,9 +21,9 @@ def test_main():
     while True:
         lcd.clear()
         time = utime.localtime()
-        lcd.putstr("{year}/{month}/{day} {HH}:{MM}:{SS}".format(
-            year=str(time[0]), month=str(time[1]), day=str(time[2]),
-            HH=str(time[3]), MM=str(time[4]), SS=str(time[5])))
+        lcd.putstr("{year:>04d}/{month:>02d}/{day:>02d} {HH:>02d}:{MM:>02d}:{SS:>02d}".format(
+            year=time[0], month=time[1], day=time[2],
+            HH=time[3], MM=time[4], SS=time[5]))
         if count % 10 == 0:
             print("Turning cursor on")
             lcd.show_cursor()
