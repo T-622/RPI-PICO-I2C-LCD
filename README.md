@@ -54,5 +54,4 @@ Feel to leave comments or questions / issues and I will try to answer / resolve 
 
 For people wondering how to use this code, Tinkernut on Youtube created a very nice guide + some more features! https://www.youtube.com/watch?v=B8Kr_3xHjqE&t
 
-Announcements / updates:
-- Thonny library package coming soon!
+
