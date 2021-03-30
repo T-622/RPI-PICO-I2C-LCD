@@ -34,9 +34,9 @@ in my case, the decimal addr. was 39 which converts to 0x27 in hex.
 - Ensure that your SCL and SDA pins are selected properly in accordance with the Pico's pin table. These connect to the low voltage side of the translator with a 3.3V Reference from the board. The high voltage side gets a 5V reference from the VBUS pin of the Pico.
 - Finally, assure the I2C_NUM_ROWS and I2C_NUM_COLS are set properly!
 
-Usage: 
-These are the python commands used in a program! (They can all be found in the lcd_api.py file with definitions to their functions)
+Functions / Usage: 
 
+These are the python commands used in a program! (They can all be found in the lcd_api.py file with definitions to their functions)
 - lcd.putstr("Text goes here!")                     - Send a string of chars to the display IMPORTANT: Use this for printing a variable: lcd.putstr(str(Variable)) [Turns variable into string] 
 - lcd.show_cursor() / lcd.hide_cursor()             - Show / Hide the cursor of the lcd (White bar)
 - lcd.blink_cursor_on() / lcd.blink_cursor_off()    - Turn on / Off the blinking cursor upon printing
