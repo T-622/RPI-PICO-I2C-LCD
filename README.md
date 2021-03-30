@@ -3,6 +3,8 @@ This is a project which adapts code from another user to allow usage of the PCF8
 
 Credit: https://github.com/dhylands/python_lcd/tree/master/lcd mostly to Dave Hylands for the basic api and lcd driver code.
 
+Project: Check it out for a full step-by-setp guide on Instructables: https://www.instructables.com/RPI-Pico-I2C-LCD-Control/ 
+
 This is code adaptded for micropython and the Raspberry Pi PICO specifically.
 
 Usage: 
