@@ -35,8 +35,16 @@ in my case, the decimal addr. was 39 which converts to 0x27 in hex.
 - Finally, assure the I2C_NUM_ROWS and I2C_NUM_COLS are set properly!
 
 Usage: 
+These are the python commands used in a program! (They can all be found in the lcd_api.py file with definitions to their functions)
 
-Printing is simple :lcd.putstr("") This requires a string input! if you want to feed a changing value such as a temperature, it must be: lcd.putstr(str(Variable))
+- lcd.putstr("Text goes here!")                     - Send a string of chars to the display IMPORTANT: Use this for printing a variable: lcd.putstr(str(Variable)) [Turns variable into string] 
+- lcd.show_cursor() / lcd.hide_cursor()             - Show / Hide the cursor of the lcd (White bar)
+- lcd.blink_cursor_on() / lcd.blink_cursor_off()    - Turn on / Off the blinking cursor upon printing
+- lcd.backlight_on() / lcd.backlight_off()          - Turn on / Off backlight of the LCD (Controlled by a small transistor on the backpack)
+- lcd.display_on() / lcd.display_off()              - Turn on / Off the display (Not backlight but the entire chip)
+- lcd.clear()                                       - Clear all chars or anything written to the display
+- lcd.move_to(Row, Col)                             - Move to position based on row and col values (X, Y)
+- lcd.custom_char(Num, bytearray([HEX chars])))     - Num can be any integer 0 - 8 (Writing to CGRAM locations) merely used for numbering. The HEX chars are simply made by using this link: https://maxpromer.github.io/LCD-Character-Creator/. It will provide a string of Hex charecters which can replace the "HEX chars" in the example command.
 
 Errors:
 
