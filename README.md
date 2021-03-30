@@ -43,7 +43,7 @@ These are the python commands used in a program! (They can all be found in the l
 - lcd.backlight_on() / lcd.backlight_off()          - Turn on / Off backlight of the LCD (Controlled by a small transistor on the backpack)
 - lcd.display_on() / lcd.display_off()              - Turn on / Off the display (Not backlight but the entire chip)
 - lcd.clear()                                       - Clear all chars or anything written to the display
-- lcd.move_to(Row, Col)                             - Move to position based on row and col values (X, Y)
+- lcd.move_to(Col, Row)                             - Move to position based on row and col values (X, Y)
 - lcd.custom_char(Num, bytearray([HEX chars])))     - Num can be any integer 0 - 8 (Writing to CGRAM locations) merely used for numbering. The HEX chars are simply made by using this link: https://maxpromer.github.io/LCD-Character-Creator/. It will provide a string of Hex charecters which can replace the "HEX chars" in the example command.
 
 Errors:
