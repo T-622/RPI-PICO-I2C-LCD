@@ -8,11 +8,12 @@ from pico_i2c_lcd import I2cLcd
 I2C_ADDR     = 0x27
 I2C_NUM_ROWS = 4
 I2C_NUM_COLS = 20
+FREQ = 400000 # Try lowering this in case of Errno 5
 
 def test_main():
     #Test function for verifying basic functionality
     print("Running test_main")
-    i2c = I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=400000)
+    i2c = I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=FREQ)
     lcd = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)    
     lcd.putstr("It Works!")
     utime.sleep(2)

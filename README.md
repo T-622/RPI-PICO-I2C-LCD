@@ -52,7 +52,11 @@ These are the python commands used in a program! (They can all be found in the l
 
 Errors:
 
-OSERROR : 5 (This is quite a common error, 5 means I/O error. Check Your connections. This means codes can't be sent or recieved ensure SCL and SDA are properly connected through the level translator!
+OSERROR : 5 (This is quite a common error, 5 means I/O error.
+
+* Check Your connections. This means codes can't be sent or recieved.
+* Ensure SCL and SDA are properly connected through the level translator!
+* Try setting the frequency (FREQ) to something lower than 400000
 
 Feel to leave comments or questions / issues and I will try to answer / resolve them as quick as possible!
 
