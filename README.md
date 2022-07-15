@@ -25,11 +25,13 @@ Setup Changes:
 - Make sure the top address is set correctly!
 Use this small program to scan for I2C devices:
 
+```python
 import machine
 sda=machine.Pin(0)
 scl=machine.Pin(1)
 i2c=machine.I2C(0,sda=sda, scl=scl, freq=400000)
 print(i2c.scan())
+```
 
 - Once you get an address through the console (REPL), this will be in decimal and not hex. You can convert the decimal to hex or simply put a decimal address in the setup.
 in my case, the decimal addr. was 39 which converts to 0x27 in hex.
